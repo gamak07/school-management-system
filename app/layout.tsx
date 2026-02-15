@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { Header } from "@/components/Header";
+import { ModalProvider } from "@/providers/ModalProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
+        <ModalProvider />
         <div className="min-h-screen bg-gray-50">
           <Sidebar />
           <div className="lg:ml-64">
