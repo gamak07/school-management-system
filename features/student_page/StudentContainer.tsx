@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { StudentFilters } from "./StudentFilters";
-import { StudentTable, students } from "./StudentTable";
+import { StudentTable } from "./StudentTable";
 import { Card } from "@/components/ui/card";
+import { students } from "@/mock_datas/students";
 
 export default function StudentContainer() {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);

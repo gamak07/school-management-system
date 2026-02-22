@@ -1,12 +1,9 @@
-
 import { TableRow, TableCell } from "@/components/ui/table";
 
-import {
-  AlertCircle,
-  CheckCircle2,
-} from "lucide-react";
+import { AlertCircle, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface StudentRowProps {
   student: any;
@@ -14,7 +11,11 @@ interface StudentRowProps {
   onToggle: () => void;
 }
 
-export default function StudentRow({ student, isSelected, onToggle }: StudentRowProps) {
+export default function StudentRow({
+  student,
+  isSelected,
+  onToggle,
+}: StudentRowProps) {
   return (
     <TableRow
       key={student.id}
@@ -105,7 +106,7 @@ export default function StudentRow({ student, isSelected, onToggle }: StudentRow
 
       <TableCell className="px-4 py-3">
         <Button className="text-teal-600 hover:text-teal-700 text-sm font-medium cursor-pointer whitespace-nowrap bg-transparent hover:bg-transparent">
-          View Profile
+          <Link href={`/students/${student.id}`}>View Profile</Link>
         </Button>
       </TableCell>
     </TableRow>
