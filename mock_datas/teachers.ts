@@ -10,7 +10,36 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20female%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-sarah-001&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20female%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-sarah-001&orientation=squarish",
+    yearsOfService: 8,
+    assignedClassesList: ["SSS 1 Gold", "SSS 2 Blue", "SSS 3 Gold"],
+    personalInfo: {
+      gender: "Female",
+      dob: "3/15/1985",
+      address: "123 Education Lane, Springfield",
+    },
+    professionalInfo: {
+      qualification: "Ph.D. in Mathematics",
+      specialization: "Applied Mathematics",
+      joinDate: "9/1/2018",
+      emergencyContact: "John Johnson - +1 (555) 987-6543",
+    },
+    performance: {
+      avgScore: 78.5,
+      passRate: 92,
+      attendanceRate: 98,
+      parentFeedback: 4.8,
+    },
+    schedule: [
+      { day: "Monday", time: "8:00 - 8:45", class: "SSS 1 Gold", subject: "Mathematics" },
+      { day: "", time: "9:30 - 10:15", class: "SSS 2 Blue", subject: "Mathematics" },
+      { day: "Tuesday", time: "8:45 - 9:30", class: "SSS 3 Gold", subject: "Further Mathematics" },
+      { day: "", time: "11:00 - 11:45", class: "SSS 1 Gold", subject: "Mathematics" },
+      { day: "Wednesday", time: "8:00 - 8:45", class: "SSS 2 Blue", subject: "Mathematics" },
+      { day: "Thursday", time: "10:00 - 10:45", class: "SSS 3 Gold", subject: "Further Mathematics" },
+      { day: "", time: "11:45 - 12:30", class: "SSS 1 Gold", subject: "Mathematics" },
+      { day: "Friday", time: "8:45 - 9:30", class: "SSS 2 Blue", subject: "Mathematics" }
+    ]
   },
   {
     id: "2",
@@ -23,7 +52,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20male%20indian%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-david-002&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20male%20indian%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-david-002&orientation=squarish",
+    yearsOfService: 5,
+    assignedClassesList: ["JSS 1 Blue", "JSS 2 Gold", "SSS 1 Blue"],
+    personalInfo: {
+      gender: "Male",
+      dob: "6/22/1990",
+      address: "45 Science Park, Springfield",
+    },
+    professionalInfo: {
+      qualification: "M.Sc. in Physics",
+      specialization: "Theoretical Physics",
+      joinDate: "9/1/2021",
+      emergencyContact: "Priya Kumar - +1 (555) 876-5432",
+    },
+    performance: {
+      avgScore: 82.0,
+      passRate: 95,
+      attendanceRate: 99,
+      parentFeedback: 4.9,
+    },
+    schedule: [
+      { day: "Monday", time: "10:00 - 10:45", class: "JSS 1 Blue", subject: "Basic Science" },
+      { day: "Tuesday", time: "8:00 - 8:45", class: "SSS 1 Blue", subject: "Physics" },
+      { day: "Wednesday", time: "11:00 - 11:45", class: "JSS 2 Gold", subject: "Basic Science" },
+      { day: "Thursday", time: "9:30 - 10:15", class: "SSS 1 Blue", subject: "Physics" },
+      { day: "Friday", time: "12:30 - 13:15", class: "JSS 1 Blue", subject: "Basic Science" }
+    ]
   },
   {
     id: "3",
@@ -36,7 +91,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20female%20hispanic%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20friendly%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-jennifer-003&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20female%20hispanic%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20friendly%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-jennifer-003&orientation=squarish",
+    yearsOfService: 6,
+    assignedClassesList: ["JSS 3 Gold", "SSS 2 Gold", "SSS 3 Blue"],
+    personalInfo: {
+      gender: "Female",
+      dob: "11/04/1988",
+      address: "88 Word Ave, Springfield",
+    },
+    professionalInfo: {
+      qualification: "B.A. in English Literature",
+      specialization: "Modern Literature",
+      joinDate: "8/15/2020",
+      emergencyContact: "Carlos Lopez - +1 (555) 111-2222",
+    },
+    performance: {
+      avgScore: 85.2,
+      passRate: 98,
+      attendanceRate: 97,
+      parentFeedback: 4.7,
+    },
+    schedule: [
+      { day: "Monday", time: "9:30 - 10:15", class: "SSS 2 Gold", subject: "English Language" },
+      { day: "Tuesday", time: "11:00 - 11:45", class: "JSS 3 Gold", subject: "Literature" },
+      { day: "Wednesday", time: "8:00 - 8:45", class: "SSS 3 Blue", subject: "English Language" },
+      { day: "Thursday", time: "12:30 - 13:15", class: "SSS 2 Gold", subject: "Literature" },
+      { day: "Friday", time: "9:30 - 10:15", class: "JSS 3 Gold", subject: "English Language" }
+    ]
   },
   {
     id: "4",
@@ -49,7 +130,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20male%20african%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-james-004&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20male%20african%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-james-004&orientation=squarish",
+    yearsOfService: 4,
+    assignedClassesList: ["JSS 3 Blue", "SSS 1 Gold", "SSS 2 Blue"],
+    personalInfo: {
+      gender: "Male",
+      dob: "2/18/1992",
+      address: "102 Chem Way, Springfield",
+    },
+    professionalInfo: {
+      qualification: "B.Sc. in Chemistry",
+      specialization: "Organic Chemistry",
+      joinDate: "9/1/2022",
+      emergencyContact: "Amaka Okonkwo - +1 (555) 333-4444",
+    },
+    performance: {
+      avgScore: 76.4,
+      passRate: 88,
+      attendanceRate: 96,
+      parentFeedback: 4.6,
+    },
+    schedule: [
+      { day: "Monday", time: "11:45 - 12:30", class: "SSS 1 Gold", subject: "Chemistry" },
+      { day: "Tuesday", time: "10:00 - 10:45", class: "JSS 3 Blue", subject: "Basic Science" },
+      { day: "Wednesday", time: "9:30 - 10:15", class: "SSS 2 Blue", subject: "Chemistry" },
+      { day: "Thursday", time: "8:00 - 8:45", class: "SSS 1 Gold", subject: "Chemistry" },
+      { day: "Friday", time: "11:00 - 11:45", class: "JSS 3 Blue", subject: "Basic Science" }
+    ]
   },
   {
     id: "5",
@@ -62,7 +169,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20female%20asian%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-emily-005&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20female%20asian%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-emily-005&orientation=squarish",
+    yearsOfService: 7,
+    assignedClassesList: ["JSS 1 Gold", "JSS 2 Blue", "SSS 3 Gold"],
+    personalInfo: {
+      gender: "Female",
+      dob: "9/10/1987",
+      address: "220 Tech Blvd, Springfield",
+    },
+    professionalInfo: {
+      qualification: "M.Sc. in Computer Science",
+      specialization: "Software Engineering",
+      joinDate: "8/15/2019",
+      emergencyContact: "Michael Chen - +1 (555) 555-6666",
+    },
+    performance: {
+      avgScore: 89.5,
+      passRate: 99,
+      attendanceRate: 100,
+      parentFeedback: 4.9,
+    },
+    schedule: [
+      { day: "Monday", time: "8:45 - 9:30", class: "SSS 3 Gold", subject: "Computer Science" },
+      { day: "Tuesday", time: "12:30 - 13:15", class: "JSS 1 Gold", subject: "ICT" },
+      { day: "Wednesday", time: "10:00 - 10:45", class: "JSS 2 Blue", subject: "ICT" },
+      { day: "Thursday", time: "11:00 - 11:45", class: "SSS 3 Gold", subject: "Computer Science" },
+      { day: "Friday", time: "8:00 - 8:45", class: "JSS 1 Gold", subject: "ICT" }
+    ]
   },
   {
     id: "6",
@@ -75,7 +208,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20male%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20distinguished%20look%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-robert-006&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20male%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20distinguished%20look%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-robert-006&orientation=squarish",
+    yearsOfService: 12,
+    assignedClassesList: ["SSS 1 Blue", "SSS 2 Gold", "SSS 3 Blue"],
+    personalInfo: {
+      gender: "Male",
+      dob: "4/05/1975",
+      address: "77 Heritage St, Springfield",
+    },
+    professionalInfo: {
+      qualification: "M.A. in History",
+      specialization: "World History",
+      joinDate: "9/1/2014",
+      emergencyContact: "Sarah Williams - +1 (555) 777-8888",
+    },
+    performance: {
+      avgScore: 81.2,
+      passRate: 94,
+      attendanceRate: 98,
+      parentFeedback: 4.8,
+    },
+    schedule: [
+      { day: "Monday", time: "10:00 - 10:45", class: "SSS 2 Gold", subject: "Government" },
+      { day: "Tuesday", time: "9:30 - 10:15", class: "SSS 3 Blue", subject: "History" },
+      { day: "Wednesday", time: "12:30 - 13:15", class: "SSS 1 Blue", subject: "History" },
+      { day: "Thursday", time: "8:45 - 9:30", class: "SSS 2 Gold", subject: "Government" },
+      { day: "Friday", time: "11:00 - 11:45", class: "SSS 3 Blue", subject: "History" }
+    ]
   },
   {
     id: "7",
@@ -88,7 +247,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20female%20muslim%20teacher%20portrait%20with%20hijab%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-fatima-007&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20female%20muslim%20teacher%20portrait%20with%20hijab%20clean%20white%20background%20formal%20attire%20warm%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-fatima-007&orientation=squarish",
+    yearsOfService: 3,
+    assignedClassesList: ["JSS 2 Blue", "SSS 1 Blue", "SSS 2 Gold"],
+    personalInfo: {
+      gender: "Female",
+      dob: "12/12/1994",
+      address: "33 Bio Court, Springfield",
+    },
+    professionalInfo: {
+      qualification: "B.Sc. in Biology",
+      specialization: "Microbiology",
+      joinDate: "9/1/2023",
+      emergencyContact: "Ahmed Ali - +1 (555) 999-0000",
+    },
+    performance: {
+      avgScore: 79.8,
+      passRate: 90,
+      attendanceRate: 95,
+      parentFeedback: 4.5,
+    },
+    schedule: [
+      { day: "Monday", time: "8:45 - 9:30", class: "SSS 1 Blue", subject: "Biology" },
+      { day: "Tuesday", time: "11:45 - 12:30", class: "JSS 2 Blue", subject: "Basic Science" },
+      { day: "Wednesday", time: "10:00 - 10:45", class: "SSS 2 Gold", subject: "Biology" },
+      { day: "Thursday", time: "9:30 - 10:15", class: "SSS 1 Blue", subject: "Biology" },
+      { day: "Friday", time: "8:00 - 8:45", class: "JSS 2 Blue", subject: "Basic Science" }
+    ]
   },
   {
     id: "8",
@@ -101,7 +286,33 @@ export const teachers = [
     classes: "3 classes",
     status: "On Leave",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20male%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20friendly%20expression%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-michael-008&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20male%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20friendly%20expression%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-michael-008&orientation=squarish",
+    yearsOfService: 9,
+    assignedClassesList: ["SSS 1 Gold", "SSS 2 Blue", "SSS 3 Gold"],
+    personalInfo: {
+      gender: "Male",
+      dob: "7/25/1982",
+      address: "500 Market St, Springfield",
+    },
+    professionalInfo: {
+      qualification: "M.Sc. in Economics",
+      specialization: "Macroeconomics",
+      joinDate: "1/10/2017",
+      emergencyContact: "Lisa Brown - +1 (555) 222-3333",
+    },
+    performance: {
+      avgScore: 84.5,
+      passRate: 96,
+      attendanceRate: 91, // Lower due to leave
+      parentFeedback: 4.8,
+    },
+    schedule: [
+      { day: "Monday", time: "11:00 - 11:45", class: "SSS 3 Gold", subject: "Economics" },
+      { day: "Tuesday", time: "8:00 - 8:45", class: "SSS 1 Gold", subject: "Commerce" },
+      { day: "Wednesday", time: "8:45 - 9:30", class: "SSS 2 Blue", subject: "Economics" },
+      { day: "Thursday", time: "11:45 - 12:30", class: "SSS 3 Gold", subject: "Economics" },
+      { day: "Friday", time: "10:00 - 10:45", class: "SSS 1 Gold", subject: "Commerce" }
+    ]
   },
   {
     id: "9",
@@ -114,7 +325,33 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Part-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20female%20hispanic%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20elegant%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-patricia-009&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20female%20hispanic%20teacher%20portrait%20clean%20white%20background%20formal%20attire%20elegant%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-patricia-009&orientation=squarish",
+    yearsOfService: 2,
+    assignedClassesList: ["JSS 1 Blue", "JSS 2 Gold", "JSS 3 Blue"],
+    personalInfo: {
+      gender: "Female",
+      dob: "10/30/1995",
+      address: "15 Global Way, Springfield",
+    },
+    professionalInfo: {
+      qualification: "B.A. in Modern Languages",
+      specialization: "Linguistics",
+      joinDate: "9/1/2024",
+      emergencyContact: "David Garcia - +1 (555) 444-5555",
+    },
+    performance: {
+      avgScore: 88.0,
+      passRate: 97,
+      attendanceRate: 98,
+      parentFeedback: 4.9,
+    },
+    schedule: [
+      { day: "Monday", time: "8:00 - 8:45", class: "JSS 1 Blue", subject: "French" },
+      { day: "Tuesday", time: "9:30 - 10:15", class: "JSS 2 Gold", subject: "Spanish" },
+      { day: "Wednesday", time: "11:45 - 12:30", class: "JSS 3 Blue", subject: "French" },
+      { day: "Thursday", time: "8:00 - 8:45", class: "JSS 1 Blue", subject: "French" },
+      { day: "Friday", time: "12:30 - 13:15", class: "JSS 2 Gold", subject: "Spanish" }
+    ]
   },
   {
     id: "10",
@@ -127,6 +364,32 @@ export const teachers = [
     classes: "3 classes",
     status: "Active",
     type: "Full-time",
-    image: "https://readdy.ai/api/search-image?query=professional%20male%20athletic%20teacher%20portrait%20clean%20white%20background%20sporty%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-daniel-010&orientation=squarish"
+    image: "https://readdy.ai/api/search-image?query=professional%20male%20athletic%20teacher%20portrait%20clean%20white%20background%20sporty%20attire%20confident%20smile%20natural%20lighting%20professional%20headshot%20photo&width=200&height=200&seq=teacher-daniel-010&orientation=squarish",
+    yearsOfService: 10,
+    assignedClassesList: ["JSS 1 Gold", "SSS 1 Blue", "SSS 2 Gold"],
+    personalInfo: {
+      gender: "Male",
+      dob: "5/14/1980",
+      address: "800 Stadium Rd, Springfield",
+    },
+    professionalInfo: {
+      qualification: "B.Sc. in Physical Education",
+      specialization: "Sports Science",
+      joinDate: "8/15/2016",
+      emergencyContact: "Emma Thompson - +1 (555) 666-7777",
+    },
+    performance: {
+      avgScore: 92.5,
+      passRate: 100,
+      attendanceRate: 99,
+      parentFeedback: 5.0,
+    },
+    schedule: [
+      { day: "Monday", time: "12:30 - 13:15", class: "JSS 1 Gold", subject: "Physical Education" },
+      { day: "Tuesday", time: "8:00 - 8:45", class: "SSS 1 Blue", subject: "Health Education" },
+      { day: "Wednesday", time: "9:30 - 10:15", class: "SSS 2 Gold", subject: "Physical Education" },
+      { day: "Thursday", time: "11:00 - 11:45", class: "JSS 1 Gold", subject: "Physical Education" },
+      { day: "Friday", time: "8:45 - 9:30", class: "SSS 1 Blue", subject: "Health Education" }
+    ]
   }
 ];
