@@ -19,7 +19,7 @@ const navItems = [
   { label: "Grades", href: "/grades", icon: FileText },
   { label: "Attendance", href: "/attendance", icon: CalendarCheck },
   { label: "Finance", href: "/finance", icon: DollarSign },
-  { label: "Events", href: "/events", icon: Calendar },
+  { label: "Calendar", href: "/calendar", icon: Calendar },
   { label: "Reports", href: "/reports", icon: BarChart3 },
   { label: "Settings", href: "/settings", icon: Settings },
 ];
