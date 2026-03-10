@@ -17,11 +17,13 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { StaffMember } from "@/mock_datas/staff";
+import type { EditTab } from "./EditStaffProfileModal";
 
 interface ViewProfileModalProps {
   open: boolean;
   staff: StaffMember | null;
   onClose: () => void;
+  onEdit: (tab: EditTab) => void;
 }
 
 function getYearsOfService(joinDateStr: string): number {
@@ -67,6 +69,7 @@ export default function ViewProfileModal({
   open,
   staff,
   onClose,
+  onEdit,
 }: ViewProfileModalProps) {
   if (!staff) return null;
 
@@ -199,7 +202,10 @@ export default function ViewProfileModal({
               <h3 className="text-lg font-semibold text-gray-900">
                 Personal Information
               </h3>
-              <button className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap cursor-pointer">
+              <button
+                onClick={() => onEdit("personal")}
+                className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap cursor-pointer"
+              >
                 Edit
               </button>
             </div>
@@ -261,7 +267,10 @@ export default function ViewProfileModal({
               <h3 className="text-lg font-semibold text-gray-900">
                 Employment Information
               </h3>
-              <button className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap cursor-pointer">
+              <button
+                onClick={() => onEdit("employment")}
+                className="text-sm text-blue-600 hover:text-blue-700 font-medium whitespace-nowrap cursor-pointer"
+              >
                 Edit
               </button>
             </div>
@@ -398,6 +407,7 @@ export default function ViewProfileModal({
           <div className="flex items-center gap-3">
             <Button
               variant="outline"
+              onClick={() => onEdit("personal")}
               className="px-5 py-2 text-sm font-medium text-gray-700 bg-white border-gray-300 rounded-lg hover:bg-gray-50 transition-colors whitespace-nowrap h-auto shadow-none"
             >
               Edit Profile

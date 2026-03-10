@@ -8,6 +8,8 @@ import StaffTable from "./StaffTable";
 import AddStaffModal from "./AddStaffModal";
 import AddStaffSuccessModal from "./AddStaffSuccessModal";
 import ViewProfileModal from "./ViewProfileModal";
+import EditStaffProfileModal from "./EditStaffProfileModal";
+import type { EditTab } from "./EditStaffProfileModal";
 import { useState } from "react";
 import { staffMembers } from "@/mock_datas/staff";
 import type { StaffMember } from "@/mock_datas/staff";
@@ -21,6 +23,9 @@ export default function StaffPageContainer() {
   const [viewProfileStaff, setViewProfileStaff] = useState<StaffMember | null>(
     null,
   );
+  const [editModalOpen, setEditModalOpen] = useState(false);
+  const [editInitialTab, setEditInitialTab] = useState<EditTab>("personal");
+  const [editStaff, setEditStaff] = useState<StaffMember | null>(null);
 
   const isAllSelected =
     staffMembers.length > 0 && selectedIds.length === staffMembers.length;
@@ -45,6 +50,13 @@ export default function StaffPageContainer() {
     setShowAddModal(false);
     setSuccessStaffName(`${data.firstName} ${data.lastName}`);
     setShowSuccessModal(true);
+  };
+
+  const handleEditProfile = (staff: StaffMember, tab: EditTab) => {
+    setViewProfileStaff(null); // close view profile modal first
+    setEditStaff(staff);
+    setEditInitialTab(tab);
+    setEditModalOpen(true);
   };
 
   return (
@@ -121,7 +133,23 @@ export default function StaffPageContainer() {
         open={viewProfileStaff !== null}
         staff={viewProfileStaff}
         onClose={() => setViewProfileStaff(null)}
+        onEdit={(tab) =>
+          viewProfileStaff && handleEditProfile(viewProfileStaff, tab)
+        }
       />
+
+      {/* Edit Staff Profile Modal */}
+      {editStaff && (
+        <EditStaffProfileModal
+          open={editModalOpen}
+          staff={editStaff}
+          initialTab={editInitialTab}
+          onClose={() => {
+            setEditModalOpen(false);
+            setEditStaff(null);
+          }}
+        />
+      )}
     </>
   );
 }
