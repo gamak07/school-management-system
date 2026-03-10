@@ -7,8 +7,10 @@ import StaffFilters from "./StaffFilters";
 import StaffTable from "./StaffTable";
 import AddStaffModal from "./AddStaffModal";
 import AddStaffSuccessModal from "./AddStaffSuccessModal";
+import ViewProfileModal from "./ViewProfileModal";
 import { useState } from "react";
 import { staffMembers } from "@/mock_datas/staff";
+import type { StaffMember } from "@/mock_datas/staff";
 import type { StaffFormData } from "./AddStaffModal";
 
 export default function StaffPageContainer() {
@@ -16,6 +18,9 @@ export default function StaffPageContainer() {
   const [showAddModal, setShowAddModal] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [successStaffName, setSuccessStaffName] = useState("");
+  const [viewProfileStaff, setViewProfileStaff] = useState<StaffMember | null>(
+    null,
+  );
 
   const isAllSelected =
     staffMembers.length > 0 && selectedIds.length === staffMembers.length;
@@ -94,6 +99,7 @@ export default function StaffPageContainer() {
         handleSelectRow={handleSelectRow}
         isAllSelected={isAllSelected}
         selectedIds={selectedIds}
+        onViewProfile={(staff) => setViewProfileStaff(staff)}
       />
 
       {/* Add Staff Modal */}
@@ -108,6 +114,13 @@ export default function StaffPageContainer() {
         open={showSuccessModal}
         staffName={successStaffName}
         onClose={() => setShowSuccessModal(false)}
+      />
+
+      {/* View Profile Modal */}
+      <ViewProfileModal
+        open={viewProfileStaff !== null}
+        staff={viewProfileStaff}
+        onClose={() => setViewProfileStaff(null)}
       />
     </>
   );

@@ -150,7 +150,7 @@ export default function AddStaffModal({
     <Dialog open={open} onOpenChange={(v) => !v && handleClose()}>
       <DialogContent
         showCloseButton={false}
-        className="p-0 gap-0 max-w-2xl max-h-[90vh] overflow-hidden flex flex-col rounded-xl"
+        className="p-0 gap-0 min-w-3xl min-w-[300px] max-h-[90vh] overflow-hidden flex flex-col rounded-xl"
       >
         {/* Visually hidden accessible title */}
         <DialogTitle className="sr-only">Add New Staff Member</DialogTitle>

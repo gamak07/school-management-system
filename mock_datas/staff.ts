@@ -1,4 +1,28 @@
-export const staffMembers = [
+export interface StaffMember {
+  id: string;
+  staffId: string;
+  name: string;
+  email: string;
+  phone: string;
+  role: string;
+  department: string;
+  status: string;
+  type: string;
+  image: string;
+  dateOfBirth: string;
+  gender: string;
+  address: string;
+  emergencyContactName: string;
+  emergencyContactPhone: string;
+  joinDate: string;
+  salary: string;
+  attendanceRate: number;
+  tasksCompleted: number;
+  punctualityScore: number;
+  feedbackRating: number;
+}
+
+export const staffMembers: StaffMember[] = [
   {
     id: "1",
     staffId: "STF001",
@@ -10,6 +34,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=47",
+    dateOfBirth: "March 15, 1978",
+    gender: "Female",
+    address: "456 Oak Avenue, Springfield, IL 62701",
+    emergencyContactName: "Robert Anderson",
+    emergencyContactPhone: "+1 (555) 234-5679",
+    joinDate: "August 1, 2015",
+    salary: "₦65,000",
+    attendanceRate: 94,
+    tasksCompleted: 87,
+    punctualityScore: 96,
+    feedbackRating: 4.5,
   },
   {
     id: "2",
@@ -22,6 +57,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=12",
+    dateOfBirth: "June 22, 1985",
+    gender: "Male",
+    address: "123 Maple Street, Springfield, IL 62702",
+    emergencyContactName: "Lisa Chen",
+    emergencyContactPhone: "+1 (555) 345-6780",
+    joinDate: "March 15, 2018",
+    salary: "₦55,000",
+    attendanceRate: 92,
+    tasksCompleted: 91,
+    punctualityScore: 89,
+    feedbackRating: 4.2,
   },
   {
     id: "3",
@@ -34,6 +80,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=45",
+    dateOfBirth: "January 8, 1980",
+    gender: "Female",
+    address: "789 Elm Boulevard, Springfield, IL 62703",
+    emergencyContactName: "Thomas Williams",
+    emergencyContactPhone: "+1 (555) 456-7891",
+    joinDate: "September 1, 2016",
+    salary: "₦48,000",
+    attendanceRate: 97,
+    tasksCompleted: 93,
+    punctualityScore: 98,
+    feedbackRating: 4.8,
   },
   {
     id: "4",
@@ -46,6 +103,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=15",
+    dateOfBirth: "November 30, 1975",
+    gender: "Male",
+    address: "321 Pine Road, Springfield, IL 62704",
+    emergencyContactName: "Sarah Thompson",
+    emergencyContactPhone: "+1 (555) 567-8902",
+    joinDate: "January 10, 2014",
+    salary: "₦42,000",
+    attendanceRate: 98,
+    tasksCompleted: 85,
+    punctualityScore: 99,
+    feedbackRating: 4.6,
   },
   {
     id: "5",
@@ -58,6 +126,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=44",
+    dateOfBirth: "April 19, 1982",
+    gender: "Female",
+    address: "654 Birch Lane, Springfield, IL 62705",
+    emergencyContactName: "Carlos Garcia",
+    emergencyContactPhone: "+1 (555) 678-9013",
+    joinDate: "May 20, 2017",
+    salary: "₦52,000",
+    attendanceRate: 96,
+    tasksCompleted: 90,
+    punctualityScore: 94,
+    feedbackRating: 4.7,
   },
   {
     id: "6",
@@ -70,6 +149,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=13",
+    dateOfBirth: "August 5, 1990",
+    gender: "Male",
+    address: "987 Cedar Court, Springfield, IL 62706",
+    emergencyContactName: "Ana Martinez",
+    emergencyContactPhone: "+1 (555) 789-0124",
+    joinDate: "October 1, 2020",
+    salary: "₦58,000",
+    attendanceRate: 88,
+    tasksCompleted: 95,
+    punctualityScore: 85,
+    feedbackRating: 4.3,
   },
   {
     id: "7",
@@ -82,6 +172,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=48",
+    dateOfBirth: "December 12, 1988",
+    gender: "Female",
+    address: "246 Walnut Drive, Springfield, IL 62707",
+    emergencyContactName: "Mark Davis",
+    emergencyContactPhone: "+1 (555) 890-1235",
+    joinDate: "February 14, 2019",
+    salary: "₦40,000",
+    attendanceRate: 91,
+    tasksCompleted: 82,
+    punctualityScore: 93,
+    feedbackRating: 4.1,
   },
   {
     id: "8",
@@ -94,6 +195,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=14",
+    dateOfBirth: "July 25, 1979",
+    gender: "Male",
+    address: "135 Spruce Way, Springfield, IL 62708",
+    emergencyContactName: "Dorothy Wilson",
+    emergencyContactPhone: "+1 (555) 901-2346",
+    joinDate: "June 5, 2013",
+    salary: "₦38,000",
+    attendanceRate: 93,
+    tasksCompleted: 78,
+    punctualityScore: 91,
+    feedbackRating: 4.0,
   },
   {
     id: "9",
@@ -106,6 +218,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=49",
+    dateOfBirth: "September 3, 1984",
+    gender: "Female",
+    address: "864 Poplar Street, Springfield, IL 62709",
+    emergencyContactName: "Richard Moore",
+    emergencyContactPhone: "+1 (555) 012-3457",
+    joinDate: "August 20, 2016",
+    salary: "₦50,000",
+    attendanceRate: 95,
+    tasksCompleted: 89,
+    punctualityScore: 97,
+    feedbackRating: 4.9,
   },
   {
     id: "10",
@@ -118,6 +241,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=11",
+    dateOfBirth: "February 28, 1977",
+    gender: "Male",
+    address: "579 Ash Avenue, Springfield, IL 62710",
+    emergencyContactName: "Helen Taylor",
+    emergencyContactPhone: "+1 (555) 123-4568",
+    joinDate: "April 1, 2012",
+    salary: "₦35,000",
+    attendanceRate: 90,
+    tasksCompleted: 80,
+    punctualityScore: 88,
+    feedbackRating: 3.8,
   },
   {
     id: "11",
@@ -130,6 +264,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=43",
+    dateOfBirth: "October 17, 1981",
+    gender: "Female",
+    address: "312 Chestnut Place, Springfield, IL 62711",
+    emergencyContactName: "William Jackson",
+    emergencyContactPhone: "+1 (555) 234-6790",
+    joinDate: "November 15, 2017",
+    salary: "₦62,000",
+    attendanceRate: 96,
+    tasksCompleted: 92,
+    punctualityScore: 95,
+    feedbackRating: 4.6,
   },
   {
     id: "12",
@@ -142,6 +287,17 @@ export const staffMembers = [
     status: "Active",
     type: "Full-time",
     image: "https://i.pravatar.cc/150?img=17",
+    dateOfBirth: "May 9, 1987",
+    gender: "Male",
+    address: "741 Hickory Lane, Springfield, IL 62712",
+    emergencyContactName: "Jennifer White",
+    emergencyContactPhone: "+1 (555) 345-7891",
+    joinDate: "July 1, 2019",
+    salary: "₦53,000",
+    attendanceRate: 89,
+    tasksCompleted: 86,
+    punctualityScore: 90,
+    feedbackRating: 4.1,
   },
   {
     id: "13",
@@ -154,6 +310,17 @@ export const staffMembers = [
     status: "Active",
     type: "Part-time",
     image: "https://i.pravatar.cc/150?img=46",
+    dateOfBirth: "March 21, 1992",
+    gender: "Female",
+    address: "258 Willow Road, Springfield, IL 62713",
+    emergencyContactName: "Michael Harris",
+    emergencyContactPhone: "+1 (555) 456-8902",
+    joinDate: "January 5, 2022",
+    salary: "₦28,000",
+    attendanceRate: 85,
+    tasksCompleted: 79,
+    punctualityScore: 87,
+    feedbackRating: 3.9,
   },
   {
     id: "14",
@@ -166,5 +333,16 @@ export const staffMembers = [
     status: "On Leave",
     type: "Contract",
     image: "https://i.pravatar.cc/150?img=16",
+    dateOfBirth: "August 14, 1995",
+    gender: "Male",
+    address: "963 Dogwood Circle, Springfield, IL 62714",
+    emergencyContactName: "Nancy Clark",
+    emergencyContactPhone: "+1 (555) 567-9013",
+    joinDate: "September 10, 2023",
+    salary: "₦30,000",
+    attendanceRate: 72,
+    tasksCompleted: 65,
+    punctualityScore: 78,
+    feedbackRating: 3.5,
   },
 ];

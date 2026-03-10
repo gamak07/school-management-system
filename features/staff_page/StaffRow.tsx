@@ -6,28 +6,18 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { TableCell, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-interface StaffMember {
-  id: string;
-  staffId: string;
-  name: string;
-  email: string;
-  phone: string;
-  role: string;
-  department: string;
-  status: string;
-  type: string;
-  image: string;
-}
+import type { StaffMember } from "@/mock_datas/staff";
 
 export default function StaffRow({
   staff,
   handleSelectRow,
   isSelected,
+  onViewProfile,
 }: {
   staff: StaffMember;
   handleSelectRow: (id: string, checked: boolean) => void;
   isSelected: boolean;
+  onViewProfile: (staff: StaffMember) => void;
 }) {
   return (
     <TableRow className="hover:bg-gray-50 transition-colors border-none">
@@ -99,6 +89,7 @@ export default function StaffRow({
       <TableCell className="px-5 py-4 text-right">
         <Button
           variant="ghost"
+          onClick={() => onViewProfile(staff)}
           className="px-4 py-2 text-sm font-medium text-teal-600 hover:!bg-teal-50 hover:text-teal-600 rounded-lg transition-colors cursor-pointer whitespace-nowrap h-auto"
         >
           View Profile

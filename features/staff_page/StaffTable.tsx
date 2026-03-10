@@ -12,6 +12,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { staffMembers } from "@/mock_datas/staff";
+import type { StaffMember } from "@/mock_datas/staff";
 import StaffRow from "./StaffRow";
 
 interface StaffTableProps {
@@ -19,6 +20,7 @@ interface StaffTableProps {
   handleSelectRow: (id: string, checked: boolean) => void;
   isAllSelected: boolean;
   selectedIds: string[];
+  onViewProfile: (staff: StaffMember) => void;
 }
 
 export default function StaffTable({
@@ -26,6 +28,7 @@ export default function StaffTable({
   handleSelectRow,
   isAllSelected,
   selectedIds,
+  onViewProfile,
 }: StaffTableProps) {
   return (
     <Card className="shadow-none border-gray-200 overflow-hidden p-0 gap-0">
@@ -73,6 +76,7 @@ export default function StaffTable({
                   staff={staff}
                   handleSelectRow={handleSelectRow}
                   isSelected={isSelected}
+                  onViewProfile={onViewProfile}
                 />
               );
             })}
